@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myargoapp1
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/akashkola/argocd_training.git"
+    path: prod
+    targetRevision: main
+
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
