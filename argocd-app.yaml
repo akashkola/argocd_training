@@ -6,7 +6,7 @@ spec:
   project: default
   source:
     directory:
-      exclude: "{deployment.yaml,service.yaml}"
+      exclude: "service.yaml"
     repoURL: "https://github.com/akashkola/argocd_training.git"
     path: prod
     targetRevision: main
