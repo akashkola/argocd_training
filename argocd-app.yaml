@@ -5,6 +5,8 @@ metadata:
 spec:
   project: default
   source:
+    directory:
+      exclude: "deployment.yaml"
     repoURL: "https://github.com/akashkola/argocd_training.git"
     path: prod
     targetRevision: main
@@ -12,3 +14,4 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: default
+  
